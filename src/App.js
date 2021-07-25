@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import emojis from 'emojis';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
             
           
             <div className="p-4 md:p-8 text-center lg:text-left">
-              <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"></div>
              
               <h1 className={isDarkMode ? "text-3xl text-center font-bold pt-8 lg:pt-0 text-white" : "text-3xl text-center font-bold pt-8 lg:pt-0 text-black" }>Aidan Perera</h1>
               <div className="mx-auto w-full pt-3 border-b-2 border-blue-500 opacity-25"></div>
@@ -82,7 +80,7 @@ function App() {
           </div>
           
           <div className="w-full lg:w-3/5">
-            <img src="/aidan_perera.png" className="hidden lg:block rounded-lg" />
+            <img src="https://raidan.com.au/images/apdev/aidan_perera.png" className="hidden lg:block rounded-lg" />
             
           </div>
         </div>
