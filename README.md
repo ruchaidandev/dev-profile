@@ -18,4 +18,4 @@ If you discover a security vulnerability within the project, please send an e-ma
 
 ## Built With
 
-* [ReactJS] (https://vuejs.org) - JS Framework Used
+* [ReactJS] (https://reactjs.org/) - JS Framework Used
