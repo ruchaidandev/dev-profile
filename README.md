@@ -15,7 +15,8 @@ The code of conduct is derived from the Laravel code of conduct. Any violations 
 
 If you discover a security vulnerability within the project, please send an e-mail to Aidan Perera via [support@raidan.com.au](mailto:support@raidan.com.au). All security vulnerabilities will be promptly addressed.
 
-
 ## Built With
 
-* [ReactJS] (https://reactjs.org/) - JS Framework Used
+* [Next.js] (https://nextjs.org) - JS Framework Used
+* [Tailwind] (https://tailwindcss.com/) - CSS/UI Library Used
+* [Framer] (https://www.framer.com/) - Animation Library Used
