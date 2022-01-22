@@ -1,3 +1,7 @@
+[![Deploy to Github Pages](https://github.com/ruchaidandev/dev-profile/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/ruchaidandev/dev-profile/actions/workflows/node.js.yml)
+
+[![CodeQL](https://github.com/ruchaidandev/dev-profile/actions/workflows/code-qa-analysis.yml/badge.svg)](https://github.com/ruchaidandev/dev-profile/actions/workflows/code-qa-analysis.yml)
+
 ## Authors
 
 - **[Aidan Perera](https://aidanperera.dev/)**
