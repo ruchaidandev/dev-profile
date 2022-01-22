@@ -20,5 +20,3 @@ If you discover a security vulnerability within the project, please send an e-ma
 * [Next.js] (https://nextjs.org) - JS Framework Used
 * [Tailwind] (https://tailwindcss.com/) - CSS/UI Library Used
 * [Framer] (https://www.framer.com/) - Animation Library Used
-
-
