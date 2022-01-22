@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Script from 'next/script'
 import { NextSeo } from 'next-seo';
 import { useState } from 'react';
 import emojis from 'emojis';
-import proPic from '../public/images/propic.min.png'
 import { motion } from "framer-motion"
 
 export default function Home() {
@@ -17,8 +17,23 @@ export default function Home() {
         <link rel="icon" href="https://raidan.com.au/images/favicon.ico" />
         <meta name="theme-color" content="#000000" />
         <link rel="apple-touch-icon" href="https://raidan.com.au/images/logo192.png" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossOrigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+       
       </Head>
+
+      <Script id="ga" async src="https://www.googletagmanager.com/gtag/js?id=G-SJKJML98WC"></Script>
+        <Script
+        id="ga-tag"
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+              
+                gtag('config', 'G-SJKJML98WC');
+                `,
+          }}
+        />
 
       <NextSeo
         title="Aidan Perera | Web & Mobile Application Developer"
@@ -53,7 +68,7 @@ export default function Home() {
                   viewport={{ once: true }} className={"text-3xl text-center font-bold pt-8 lg:pt-0 "}>Aidan Perera</motion.h1>
                 <div className="mx-auto w-full pt-3 border-b-2 border-blue-500 opacity-25"></div>
 
-                <p className="py-4 text-base flex items-center ">
+                <div className="py-4 text-base flex items-center ">
                   <motion.div className="text-2xl flex w-full justify-evenly" initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}>
                     <motion.span animate={{
@@ -81,11 +96,11 @@ export default function Home() {
                       rotate: [0, 0, 270, 270, 0]
                     }}>{emojis.unicode(' :beers: ')}</motion.span>
                   </motion.div>
-                </p>
+                </div>
 
                 <div className="mx-auto w-full pt-3 border-b-2 border-blue-500 opacity-25"></div>
 
-                <motion.p className={"py-4 text-base flex items-center justify-center text-center"} initial={{ opacity: 0 }}
+                <motion.div className={"py-4 text-base flex items-center justify-center text-center"} initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}>
                   <i className="fas fa-briefcase mr-4 "></i>
                   <div className="flex-1">
@@ -93,7 +108,7 @@ export default function Home() {
                       whileHover={{ scale: 1.3 }}
                       whileTap={{ scale: 0.9 }} href="https://fonseka.com.au" className="hover:text-blue-400" target="_blank">Fonseka</motion.a>
                   </div>
-                </motion.p>
+                </motion.div>
 
 
                 <div className="py-5 w-full mx-auto flex flex-wrap items-center justify-center">
@@ -151,21 +166,22 @@ export default function Home() {
 
             </div>
 
-            <motion.div className="w-full  md:w-2/5 px-1 md:pl-4" initial={{ opacity: 0 }}
+            <motion.div className="w-full block md:w-2/5 px-1 md:pl-4 py-4" initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}>
-
               <Image
-                src={proPic}
+                src={"https://raidan.com.au/images/propic.min.png"}
                 alt="Aidan perera"
-                layout="intrinsic"
-                placeholder="blur"
-                priority
+                layout="responsive"
+                height={300}
+                width={300}
+                loading="lazy"
+                quality="80"
               />
             </motion.div>
           </div>
         </div>
         <footer className="w-full flex items-center flex-wrap justify-center h-20">
-          <p className="text-center text-base text-gray-400">&copy; {new Date().getFullYear()} Aidan Perera, Inc. All rights reserved.</p>
+          <div className="text-center text-base text-gray-400">&copy; {new Date().getFullYear()} Aidan Perera, Inc. All rights reserved.</div>
         </footer>
       </div>
 
