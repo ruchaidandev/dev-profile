@@ -122,7 +122,7 @@ export default function Home() {
                     </motion.a>
                     <motion.a
                       whileHover={{ scale: 1.3 }}
-                      whileTap={{ scale: 0.9 }} href="https://raidan.com.au/contributors/aidan-perer" target="_blank" rel="noopener noreferrer"
+                      whileTap={{ scale: 0.9 }} href="https://www.linkedin.com/in/aidanperera/" target="_blank" rel="noopener noreferrer"
                       className={" focus:outline-none block font-bold uppercase lg:inline-block lg:mt-0  hover:text-blue-400 "}>
                       <i className="fab fa-linkedin"></i>
                     </motion.a>
@@ -181,7 +181,12 @@ export default function Home() {
           </div>
         </div>
         <footer className="w-full flex items-center flex-wrap justify-center h-20">
-          <div className="text-center text-base text-gray-400">&copy; {new Date().getFullYear()} Aidan Perera, Inc. All rights reserved.</div>
+          <div className="text-center text-base text-gray-400">&copy; {new Date().getFullYear()} Aidan Perera, <motion.a
+                      whileHover={{ scale: 1.3 }}
+                      whileTap={{ scale: 0.9 }} href="https://raidan.com.au/" target="_blank" rel="noopener noreferrer"
+                     >
+                     Raidan
+                    </motion.a>. All rights reserved.</div>
         </footer>
       </div>
 
