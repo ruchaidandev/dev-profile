@@ -7,6 +7,7 @@
     "email": "aidan@raidan.com.au",
     "url": "https://aidanperera.dev"
   },
+  "homepage" : "aidanperera.dev",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
