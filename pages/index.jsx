@@ -36,13 +36,13 @@ export default function Home() {
         />
 
       <NextSeo
-        title="Aidan Perera | Web & Mobile Application Developer"
+        title="Aidan Perera | Software Engineer"
         description="Aidan Perera Website | For more information visit raidan.com.au."
-        keywords="aidan perera, raidan, developer, web and mobile application developer, software developer"
+        keywords="aidan perera, raidan, developer, web and mobile application developer, software developer, software engineer, perera"
         author="Aidan Perera"
         openGraph={{
           url: 'https://aidanperera.dev',
-          title: 'Aidan Perera | Web & Mobile Application Developer',
+          title: 'Aidan Perera | Software Engineer',
           description: 'Aidan Perera Website | For more information visit raidan.com.au.',
           site_name: 'AidanPerera',
         }}
@@ -104,7 +104,7 @@ export default function Home() {
                   whileInView={{ opacity: 1 }}>
                   <i className="fas fa-briefcase mr-4 "></i>
                   <div className="flex-1">
-                    Web & Mobile Application Developer at  <motion.a
+                  Software Engineer at  <motion.a
                       whileHover={{ scale: 1.3 }}
                       whileTap={{ scale: 0.9 }} href="https://fonseka.com.au" className="hover:text-blue-400" target="_blank">Fonseka</motion.a>
                   </div>
@@ -181,12 +181,12 @@ export default function Home() {
           </div>
         </div>
         <footer className="w-full flex items-center flex-wrap justify-center h-20">
-          <div className="text-center text-base text-gray-400">&copy; {new Date().getFullYear()} Aidan Perera, <motion.a
+          <div className="text-center text-base text-gray-400">&copy; {new Date().getFullYear()} Aidan Perera | <motion.a
                       whileHover={{ scale: 1.3 }}
                       whileTap={{ scale: 0.9 }} href="https://raidan.com.au/" target="_blank" rel="noopener noreferrer"
                      >
-                     Raidan
-                    </motion.a>. All rights reserved.</div>
+                     Raidan |
+                    </motion.a> All rights reserved.</div>
         </footer>
       </div>
 
