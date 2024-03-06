@@ -16,7 +16,6 @@ jobs:
         node-version: [16.x]
 
     steps:
-      
       - name: Get Files
         uses: actions/checkout@v2.4.0
 
@@ -36,13 +35,13 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
-            
+
       - name: Build
         run: |
           npm i --legacy-peer-deps
           npm run build
           npm run export
-          
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
