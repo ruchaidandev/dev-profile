@@ -1,7 +1,19 @@
-[![Deploy to Github Pages](https://github.com/ruchaidandev/dev-profile/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/ruchaidandev/dev-profile/actions/workflows/node.js.yml)
 
-[![CodeQL](https://github.com/ruchaidandev/dev-profile/actions/workflows/code-qa-analysis.yml/badge.svg)](https://github.com/ruchaidandev/dev-profile/actions/workflows/code-qa-analysis.yml)
+ <p align="center">
+    <a href="https://github.com/ruchaidandev/dev-profile/actions">
+      <img alt="Github Pages Deployment" src="https://github.com/ruchaidandev/dev-profile/actions/workflows/node.js.yml/badge.svg?branch=main" />
+    </a>
+     <a href="https://github.com/ruchaidandev/dev-profile/actions">
+      <img alt="CodeQL" src="https://github.com/ruchaidandev/dev-profile/actions/workflows/code-qa-analysis.yml/badge.svg" />
+    </a>
+        <br />
+    <br />
+    <a href="https://raidan.com.au">
+      <img src="https://raidan.com.au/images/logo.svg" alt="Raidan" height="60px" />
+    </a>
+ </p>
 
+ 
 ## Authors
 
 - **[Aidan Perera](https://aidanperera.dev/)**
